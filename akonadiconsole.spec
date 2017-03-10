@@ -1,6 +1,6 @@
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	16.12.2
+Version:	16.12.3
 Release:	1
 Epoch:		3
 License:	GPLv2+
