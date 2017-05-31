@@ -43,6 +43,8 @@ BuildRequires:	boost-devel
 %description
 Console that helps to debug akonadi.
 
+%libpackage akonadiconsole 5
+
 %files
 %{_kde5_applicationsdir}/org.kde.akonadiconsole.desktop
 %{_bindir}/akonadiconsole
