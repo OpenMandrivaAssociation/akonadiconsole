@@ -2,7 +2,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -58,8 +58,8 @@ Console that helps to debug akonadi.
 %{_bindir}/akonadiconsole
 %{_datadir}/kconf_update/akonadiconsole*
 %{_iconsdir}/hicolor/*/apps/akonadiconsole.*
-%{_sysconfdir}/xdg/akonadiconsole.categories
-%{_sysconfdir}/xdg/akonadiconsole.renamecategories
+%{_datadir}/qlogging-categories5/akonadiconsole.categories
+%{_datadir}/qlogging-categories5/akonadiconsole.renamecategories
 
 #----------------------------------------------------------------------
 
