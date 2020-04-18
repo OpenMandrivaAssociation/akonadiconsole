@@ -2,14 +2,13 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	20.03.90
-Release:	2
+Version:	20.04.0
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		akonadiconsole-qt-5.15.patch
 
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Akonadi)
