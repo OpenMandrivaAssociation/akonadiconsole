@@ -2,7 +2,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	21.03.80
+Version:	21.03.90
 Release:	1
 Epoch:		3
 License:	GPLv2+
