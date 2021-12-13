@@ -2,7 +2,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	21.08.3
+Version:	21.12.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -56,7 +56,6 @@ Console that helps to debug akonadi.
 %files
 %{_kde5_applicationsdir}/org.kde.akonadiconsole.desktop
 %{_bindir}/akonadiconsole
-%{_datadir}/kconf_update/akonadiconsole*
 %{_iconsdir}/hicolor/*/apps/akonadiconsole.*
 %{_datadir}/qlogging-categories5/akonadiconsole.categories
 %{_datadir}/qlogging-categories5/akonadiconsole.renamecategories
