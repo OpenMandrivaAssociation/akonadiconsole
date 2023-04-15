@@ -2,8 +2,8 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	22.12.3
-Release:	2
+Version:	23.03.90
+Release:	1
 Epoch:		3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -33,7 +33,7 @@ BuildRequires:	cmake(KF5AkonadiContact)
 BuildRequires:	cmake(KF5CalendarSupport)
 BuildRequires:	cmake(KF5AkonadiMime)
 BuildRequires:	cmake(KF5IMAP)
-BuildRequires:	cmake(KF5MessageViewer)
+BuildRequires:	cmake(KPim5MessageViewer)
 BuildRequires:	cmake(KF5Mime)
 BuildRequires:	cmake(KF5Libkdepim)
 BuildRequires:	cmake(KF5Libkleo)
@@ -53,7 +53,7 @@ Console that helps to debug akonadi.
 
 %libpackage akonadiconsole 5
 
-%files
+%files -f akonadiconsole.lang
 %{_kde5_applicationsdir}/org.kde.akonadiconsole.desktop
 %{_bindir}/akonadiconsole
 %{_iconsdir}/hicolor/*/apps/akonadiconsole.*
@@ -71,3 +71,4 @@ Console that helps to debug akonadi.
 
 %install
 %ninja_install -C build
+%find_lang akonadiconsole
