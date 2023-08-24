@@ -2,7 +2,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	23.04.3
+Version:	23.08.0
 Release:	1
 Epoch:		3
 License:	GPLv2+
@@ -11,8 +11,8 @@ Url:		http://www.kde.org
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 
 BuildRequires:	cmake(ECM)
-BuildRequires:	cmake(KF5Akonadi)
-BuildRequires:	cmake(KF5AkonadiSearch)
+BuildRequires:	cmake(KPim5Akonadi)
+BuildRequires:	cmake(KPim5AkonadiSearch)
 BuildRequires:	cmake(KF5Completion)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5ConfigWidgets)
@@ -29,14 +29,14 @@ BuildRequires:	cmake(KF5Crash)
 BuildRequires:	cmake(KF5PimTextEdit)
 BuildRequires:	cmake(KF5Contacts)
 BuildRequires:	cmake(KF5CalendarCore)
-BuildRequires:	cmake(KF5AkonadiContact)
-BuildRequires:	cmake(KF5CalendarSupport)
-BuildRequires:	cmake(KF5AkonadiMime)
-BuildRequires:	cmake(KF5IMAP)
+BuildRequires:	cmake(KPim5AkonadiContact)
+BuildRequires:	cmake(KPim5CalendarSupport)
+BuildRequires:	cmake(KPim5AkonadiMime)
+BuildRequires:	cmake(KPim5IMAP)
 BuildRequires:	cmake(KPim5MessageViewer)
-BuildRequires:	cmake(KF5Mime)
-BuildRequires:	cmake(KF5Libkdepim)
-BuildRequires:	cmake(KF5Libkleo)
+BuildRequires:	cmake(KPim5Mime)
+BuildRequires:	cmake(KPim5Libkdepim)
+BuildRequires:	cmake(KPim5Libkleo)
 BuildRequires:	cmake(QGpgme)
 BuildRequires:	pkgconfig(xapian-core)
 BuildRequires:	pkgconfig(Qt5Core)
