@@ -5,7 +5,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -57,28 +57,18 @@ BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(libsasl2)
 BuildRequires:	boost-devel
 
+%rename plasma6-akonadiconsole
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Console that helps to debug akonadi.
 
-%files -f akonadiconsole.lang
+%files -f %{name}.lang
 %{_datadir}/applications/org.kde.akonadiconsole.desktop
 %{_bindir}/akonadiconsole
 %{_iconsdir}/hicolor/*/apps/akonadiconsole.*
 %{_datadir}/qlogging-categories6/akonadiconsole.categories
 %{_datadir}/qlogging-categories6/akonadiconsole.renamecategories
 %{_libdir}/libakonadiconsole.so*
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n akonadiconsole-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang akonadiconsole
