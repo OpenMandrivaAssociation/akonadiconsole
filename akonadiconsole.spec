@@ -5,7 +5,7 @@
 
 Summary:	Console that helps to debug akonadi
 Name:		akonadiconsole
-Version:	26.04.3
+Version:	26.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -41,7 +41,7 @@ BuildRequires:	cmake(KPim6CalendarSupport)
 BuildRequires:	cmake(KPim6AkonadiMime)
 BuildRequires:	cmake(KPim6IMAP)
 BuildRequires:	cmake(KPim6MessageViewer)
-BuildRequires:	cmake(KPim6Mime)
+BuildRequires:	cmake(KF6Mime)
 BuildRequires:	cmake(KPim6Libkdepim)
 BuildRequires:	cmake(KPim6Libkleo)
 BuildRequires:	cmake(QGpgme)
